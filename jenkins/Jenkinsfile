@@ -9,7 +9,7 @@ pipeline{
     stage ('install modules'){
       steps{
         sh '''
-          npm install 
+          npm install --verbose -d
           npm install --save classlist.js
         '''
       }
